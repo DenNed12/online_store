@@ -156,15 +156,15 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_POST = 465
-EMAIL_HOST_USER = 'deonissl@yandex.ru'
-EMAIL_HOST_PASSWORD = 'pvjqbanfbgqdafdi'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 
 ACCOUNT_FORMS = {'signup': 'accounts.forms.CustomSignupForm'}
 
-DEFAULT_FROM_EMAIL = "deonissl@yandex.ru"
-SERVER_EMAIL = "deonissl@yandex.ru"
+DEFAULT_FROM_EMAIL = "
+SERVER_EMAIL = ""
 MANAGERS = (
     ('Denis', 'deonissl@yandex.ru'),
 
