@@ -2,6 +2,7 @@ from django.db import models
 from django.db import models
 from django.core.validators import MinValueValidator
 from django.contrib.auth.models import User
+from django.urls import reverse
 # Create your models here.
 
 
@@ -28,6 +29,8 @@ class Product(models.Model):
         auto_now=True,
     )
 
+    def get_absolute_url(self):
+        return reverse('product_detail', args=[str(self.id)])
 class Category(models.Model):
     name = models.CharField(max_length=200, unique =True)
 

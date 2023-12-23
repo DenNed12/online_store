@@ -43,6 +43,7 @@ class ProductCreate(LoginRequiredMixin, CreateView):
     model = Product
     template_name = 'product_edit.html'
 
+
 @login_required
 @csrf_protect
 def subscriptions(request):
